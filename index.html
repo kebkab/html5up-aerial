@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--Profile Card-->
+	
+<html>
+	<head>
+		<title>Sinclair's Profile Cards</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Sinclair Keb Kab</h1>
+						<p>Analyst Developer // Administrator &nbsp;&bull;&nbsp; Rio de Janeiro - Brazil &nbsp;&bull;&nbsp; May 1992</p>
+												
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/kebkab21" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/kebstark" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/kebkab92/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/sinclair-keb-kab-26564933/" target="_blank" class="icon fa-linkedin"><span class="label">Linked In</span></a></li>
+								<li><a href="mailto:kebkab.2@gmail.com" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; S.K.K.R. : </a></span>
+						
+							<style>
+									/*body {font-family: Arial, Helvetica, sans-serif;}*/
+									
+									/* The Modal (background) */
+									.modal {
+										display: none; /* Hidden by default */
+										position: fixed; /* Stay in place */
+										z-index: 1; /* Sit on top */
+										padding-top: 100px; /* Location of the box */
+										left: 0;
+										top: 0;
+										width: 100%; /* Full width */
+										height: 100%; /* Full height */
+										overflow: auto; /* Enable scroll if needed */
+										background-color: rgb(0,0,0); /* Fallback color */
+										background-color: rgba(0, 0, 0, 0.644); /* Black w/ opacity */
+									}
+									
+									/* Modal Content */
+									.modal-content {
+										position: relative;
+										background-color: #2f3946e8;
+										margin: auto;
+										padding: 0;
+										border: 1px solid rgb(143, 143, 143);
+										width: 60%;
+										box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+										-webkit-animation-name: animatetop;
+										-webkit-animation-duration: 0.4s;
+										animation-name: animatetop;
+										animation-duration: 0.4s
+									}
+									
+									/* Add Animation */
+									@-webkit-keyframes animatetop {
+										from {bottom:-300px; opacity:0} 
+										to {bottom:0; opacity:1}
+									}
+									
+									@keyframes animatetop {
+										from {bottom:-300px; opacity:0}
+										to {bottom:0; opacity:1}
+									}
+									
+									/* The Close Button */
+									.close {
+										color: rgb(165, 165, 165);
+										float: right;
+										font-size: 28px;
+										font-weight: bold;
+									}
+									
+									.close:hover,
+									.close:focus {
+										color: #000;
+										text-decoration: none;
+										cursor: pointer;
+									}
+									
+									.modal-header {
+										font-family: 'Source Sans Pro', sans-serif;
+										text-align: center;
+										text-anchor: middle;
+										margin: 5px;
+										padding:  2px 16px;
+										font-size: 30pt;
+										background-color: #2f3946;
+										color: white;
+									}
+									
+									.modal-body {
+										font-family: 'Source Sans Pro', sans-serif;
+										text-align: center;
+										padding: 2px 16px;
+										font-weight: 300 !important;
+										letter-spacing: -0.025em;
+										line-height: 1.75em;							
+									}
+									
+									.modal-footer {
+										font-family: 'Source Sans Pro', sans-serif;
+										text-align: center;
+										margin: 5px;
+										padding: 2px 16px;
+										background-color: #2f3946;
+										color: white;
+									}
+									
+									.modal-form{
+										font-family: 'Source Sans Pro', sans-serif;
+										text-align: center;
+										padding: 2px 16px;
+										color: rgb(255, 255, 255);
+									}
+									
+									.modal-comment{
+										font-family: 'Source Sans Pro', sans-serif;
+										text-align: center;
+										padding: 2px 16px;
+										color: rgb(255, 255, 255);
+									}
+									</style>
+
+
+						<!-- Trigger/Open The Modal -->
+						<button id="myBtn">Contact</button>
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+								  <div class="modal-header">
+									<span class="close">&times;</span>
+									<h2>Contact</h2>
+								  </div>
+								  <div class="modal-body">
+										<form action="/action_page.php">
+											<div class="modal-form">
+											First name:<br>
+											<input type="text" style="color: black" name="firstname" value=""><br>
+											Phone:<br>
+											<input type="tel" style="color: black" name="phone" value="" maxlength="11" ><br>
+											E-mail:<br>
+											<input type="email" style="color: black;" name="email" value=""><br><br>
+											<div class="">
+												<div class="col-3">Comment</div>
+												<textarea rows="4" cols="30" name="Comment" placeholder="Enter your comment here..." onfocus="this.value='';" value="" form="/action_page" style="color: black">Enter your comment here...</textarea>
+												<!-- caixa antiga <input type="text" style="color: black" name="Comment" value=""   onfocus="this.value='';"><br><br>-->
+											</div>
+											<input type="submit" style="color: #2f3946" value="Submit">
+												
+											</div>
+										  </form>
+								  </div>
+								  <div class="modal-footer">
+									<h3><span class="copyright">&copy; S.K.K.R.</a></span></h3>
+								  </div>
+								</div>
+							  
+							  </div>
+
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
